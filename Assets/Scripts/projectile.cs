@@ -24,7 +24,9 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#pragma warning disable CS0642 // Possible mistaken empty statement
         if(transform.position.magnitude > 1000.0f);
+#pragma warning restore CS0642 // Possible mistaken empty statement
         {
             Destroy(gameObject);
         }
@@ -33,7 +35,7 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         EnemyController e = other.collider.GetComponent<EnemyController>();
-        if (e ! = null)
+        if (e != null)
         {
             e.Fix();
         }

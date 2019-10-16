@@ -58,18 +58,19 @@ public class EnemyController : MonoBehaviour
                 player.ChangeHealth(-1);
             }
         }
-        public void Fix()
-    {
-            broken = false;
-            rigidbody2d.simulated = false;
-            animator.SetTrigger("Fixed");
-    }
 }
 
-    
-    
-       
-    
+    public void Fix()
+    {
+        broken = false;
+        rigidbody2d.simulated = false;
+        animator.SetTrigger("Fixed");
+    }
+
+
+
+
+
 }
 
 

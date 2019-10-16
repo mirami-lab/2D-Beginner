@@ -29,7 +29,9 @@ public class NewBehaviourScript : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         Vector2 move = new Vector2(horizontal, vertical);
+#pragma warning disable CS0642 // Possible mistaken empty statement
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f));
+#pragma warning restore CS0642 // Possible mistaken empty statement
         {
             lookDirection.Set(move.x, move.y);
             lookDirection.Normalize();

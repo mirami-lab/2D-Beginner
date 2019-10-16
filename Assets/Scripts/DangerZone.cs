@@ -7,9 +7,13 @@ public class DangerZone : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerStay2D(Collider2D other)
     {
-        RubyController3 controller = other.GetComponent<RubyController3 >();
-        if (controller! = null) ;
-        controller.ChangeHealth(-1);
+        NewBehaviourScript controller = other.GetComponent<NewBehaviourScript >();
+#pragma warning disable CS0642 // Possible mistaken empty statement
+        if (!(controller != null)) ;
+#pragma warning restore CS0642 // Possible mistaken empty statement
+        {
+            controller.ChangeHealth(-1);
+        }
     }
 
     // Update is called once per frame
