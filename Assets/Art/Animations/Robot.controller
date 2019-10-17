@@ -22,9 +22,9 @@ AnimatorState:
   m_TimeParameterActive: 0
   m_Motion: {fileID: -6827065429209809055}
   m_Tag: 
-  m_SpeedParameter: Move X
+  m_SpeedParameter: '-'
   m_MirrorParameter: 
-  m_CycleOffsetParameter: Move X
+  m_CycleOffsetParameter: '-'
   m_TimeParameter: Move X
 --- !u!206 &-6827065429209809055
 BlendTree:
@@ -35,7 +35,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ec119495a8bed1f4a953c22784ed072d, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5e27fec40fe1aca42ac5da2094b933f0, type: 2}
     m_Threshold: 0
     m_Position: {x: -0.5, y: 0}
     m_TimeScale: 1
@@ -43,7 +43,7 @@ BlendTree:
     m_DirectBlendParameter: Move X
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 6dcf161491b6a1e43abf9672dc4611bf, type: 2}
+    m_Motion: {fileID: 7400000, guid: 3f05b0e4215fcf2488d5d8034bc1be7b, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: 0.5, y: 0}
     m_TimeScale: 1
@@ -51,7 +51,7 @@ BlendTree:
     m_DirectBlendParameter: Move X
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: d4c94f8437fffff448f20acada471f52, type: 2}
+    m_Motion: {fileID: 7400000, guid: 60dd9140daff34940baa71bdb10755a2, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: 0, y: 0.5}
     m_TimeScale: 1
@@ -59,7 +59,7 @@ BlendTree:
     m_DirectBlendParameter: Move X
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 22196404c9e00e54085c0c7330532a7b, type: 2}
+    m_Motion: {fileID: 7400000, guid: ec119495a8bed1f4a953c22784ed072d, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: -0.5}
     m_TimeScale: 1
@@ -67,7 +67,7 @@ BlendTree:
     m_DirectBlendParameter: Move X
     m_Mirror: 0
   m_BlendParameter: Move Y
-  m_BlendParameterY: Blend
+  m_BlendParameterY: Move X
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -89,12 +89,6 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: Move Y
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: '-'
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
