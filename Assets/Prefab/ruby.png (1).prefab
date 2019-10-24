@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 563220433229069602}
   - component: {fileID: 5295600383631272286}
   - component: {fileID: 6130902690278686967}
+  - component: {fileID: 6714139473160377342}
   m_Layer: 8
   m_Name: ruby.png (1)
   m_TagString: Untagged
@@ -121,3 +122,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6714139473160377342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563220433229069629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b4b889314bdd4491763fb6762356c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
